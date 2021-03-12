@@ -1,0 +1,1217 @@
+/* 
+MAIN STYLES for website PIXELZONE.FR
+Author : Anthony Cavalloni
+*/
+
+
+/* -------------------------------------------------------
+General styles (body, h1, h2, h3, a, etc.)
+--------------------------------------------------------*/
+
+html,body{
+	height: 100%;
+	overflow:hidden;
+}
+
+#maskcontent{
+    position:absolute; 
+    top:0; 
+    left:0; 
+    right:0; 
+    bottom:0;
+}
+
+#container{
+	min-height: 100%;
+	margin:0 auto;
+	width:960px;
+	font-family:QuicksandBook, Tahoma, Helvetica, Arial, sans-serif;
+	color:#000;
+	background:#fff;
+}
+
+.clear{
+	clear:both;
+}
+
+a{
+	text-decoration:none;
+}
+
+.bold{
+	font-family:"QuicksandBold",Helvetica,Arial,sans-serif;
+}
+
+.strong{
+	font-weight:normal;
+}
+
+.blue{
+	color:#15b8e7;
+	background-color: inherit;
+}
+
+.break{
+	height:20px;
+}
+
+#content h1{
+	font-size:4.2em;
+	font-family:Times,serif;
+}
+
+.message h2{
+	font-size:1.3em;
+	line-height:1.2em;
+}
+
+#content h3{
+	line-height: 1.2em;
+	font-family:"QuicksandBold", Tahoma, Helvetica, Arial, sans-serif;;
+}
+
+
+/*********************************** Link sliding */
+
+.image {
+	margin-right:15px;
+	float:left;
+	height:30px;
+	position:relative;
+	overflow:hidden;
+	width:250px;
+	height:30px;
+}
+.image img {
+	position:absolute;
+}
+
+.image a{
+	color:white;
+	text-decoration:none;
+	background-color: inherit;
+}
+
+/* -------------------------------------------------------
+Top (logo and navigation)
+--------------------------------------------------------*/
+
+#header{
+	height:75px;
+	width:950px;
+	padding:5px 5px 0 5px;
+	position:fixed;
+	z-index:2;
+}
+
+.logo{
+	float:left;
+	width:50px;
+	height:50px;
+	margin-top:10px;
+}
+
+.menu{
+	width:auto;
+	height:75px;
+	float:right;
+	margin-left:47px;
+	line-height: 0.8em;
+}
+
+.menu-title{
+	font-family:"QuicksandBold", Tahoma, Helvetica, Arial, sans-serif;
+	font-size:0.9em;
+	margin-bottom:3px;
+	color:#000;
+	background:#fff;
+}
+
+.menu a{
+	font-size:0.7em;
+	color:#000;
+	background-color: #fff;
+}
+
+.menu a:hover{
+	color:#15b8e7;
+	font-family:"QuicksandBold",Tahoma, Helvetica, Arial, sans-serif;
+	background-color: #fff;
+}
+
+/* -------------------------------------------------------
+Content
+--------------------------------------------------------*/
+#outer {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  overflow: visible;
+}
+
+#content{
+	width:950px;
+	height:435px;
+	padding:0 0 135px 0;
+  	margin-left: -475px;  /***  width / 2   ***/
+  	position: absolute;
+ 	top: -250px;          /***  height / 2   ***/
+  	left: 50%;
+  	overflow:hidden;
+}
+
+#content p{
+	font-size:0.9em;
+	width:33em;
+	margin-bottom:10px;
+	word-spacing:0.2em;
+	line-height:1.2em;
+}
+
+#content ul{
+	font-size:0.90em;
+	line-height:1.3em;
+	/*list-style-type:circle;
+	list-style-position:outside;*/
+}
+
+#content li{
+	padding-left:4px;
+}
+
+.message h1{
+	margin-bottom:14px;
+}
+
+/************************************************* Home */
+
+#portrait-home{
+	height:475px;
+	width:420px;
+	background:url('../images/portrait-anthony-cavalloni.png')no-repeat;
+	float:left;
+}
+
+#message-home{
+	float:right;
+	width:530px;
+	height:270px;
+	margin:110px 0 0 0;
+}
+
+#message-home h1{
+	font-size:4.0em;
+}
+
+#message-home h2{
+	font-size:1.59em;
+}
+
+#find-out-more{
+	width:230px;
+}
+
+/************************************************* Who I am */
+
+#portrait-whoiam{
+	position:relative;
+	height:475px;
+	width:350px;
+	background:url('../images/profile-anthony-cavalloni.png')no-repeat;
+	float:right;
+}
+
+/* tooltip box */
+.tooltip{
+	position:absolute;
+	display:block;
+	cursor:default;
+	width:20px;
+	height:16px;
+	background: url('../images/tooltip.png') bottom;
+	text-align:center;
+	padding:4px 0 0 0;
+}
+
+.eye{
+	margin: 210px 0 0 0px;
+}
+
+.nose{
+	margin:250px 0 0 5px;
+}
+
+.mouth{
+	margin:310px 0 0 30px;
+}
+
+
+.tooltip:hover{
+	background: url('../images/tooltip.png') top transparent;
+	color:#fff;
+}
+
+/* div that appears */
+#easy_tooltip{
+	width:160px;
+	height:auto;
+	margin:10px 0 0 -210px;
+	padding:7px 12px 7px 12px;
+	text-align:center;
+	background:#eaeaea;
+	color:inherit;
+	font-size:1em;
+	font-family:QuicksandBook, Tahoma, Helvetica, Arial, sans-serif;
+}
+
+#message-whoiam{
+	float:left;
+	width:530px;
+	height:270px;
+	margin:50px 0 0 0;
+
+}
+
+#message-whoiam p{
+	font-size:1.0em;
+	text-align:justify;
+}
+
+#download-resume{
+	width:120px;
+}
+
+#my-journey{
+	width:130px;
+}
+
+/************************************************* Skills */
+
+#skills{
+	padding-top:40px;
+	position:relative;
+}
+
+
+#skills h2{
+	width:730px;
+	margin:20px 0 25px 0;
+}
+
+#chart-message{
+	float:left;
+	width:150px;
+	height:150px;
+	margin:30px 10px 0 0;
+	background:url('../images/skills-chart-message.png');
+	display:none;
+}
+
+#skill-chart{
+	float:left;
+	width:620px;
+	height:217px;
+	margin-top:5px;
+	background: url('../images/skills-chart-background.png') top left no-repeat;
+	padding:13px 0 0 10px;
+}
+
+.bar{
+	height:20px;
+	margin:6px 0 0 0;
+	background:#15b8e7;
+	text-align:center;
+	color:#fff;
+	font-size:0.8em;
+	padding-top:10px;
+	overflow:hidden;
+	position:relative;
+	cursor:default;
+}
+
+#bar-htmlcss{
+	width:550px;
+}
+
+#bar-photoshop{	
+	width:470px;
+}
+
+#bar-illustrator{	
+	width:310px;
+}
+
+#bar-phpmysql{	
+	width:550px;
+}
+
+#bar-jquery{	
+	width:410px;
+}
+
+.legend{
+	text-align:center;
+	float:left;
+	width:95px;
+	height:15px;
+	font-size:1em;
+	margin:20px 0 0 25px;
+}
+
+#experience{
+	margin:-160px 0 0 130px;
+	padding-top:25px;
+	float:left;
+	width:135px;
+}
+
+.experience-title{
+	font-size:1.2em;
+	font-family:"QuicksandBold", Tahoma, Helvetica, Arial, sans-serif;
+	padding: 0 0 0 4px;
+}
+
+#experience ul{
+	margin-top:20px;
+	font-size:0.8em;
+}
+
+/************************************************* Journey */
+
+/************ Numbers */
+
+#journey-numbers{
+	margin:60px 0 0 70px;
+	height:90px;
+	width:100%;
+}
+
+.number{
+	background:url('../images/journey-number.png');
+	height:72px;
+	width:90px;
+	float:left;
+	text-align:center;
+	padding-top:18px;
+	font-size:3.2em;
+	cursor:default;
+}
+
+.dots{
+	display:block;
+	height:4px;
+	background:url('../images/dotted-pattern.png');
+	width:130px;
+}
+
+#journey-numbers .dots{
+	float:left;
+	margin: 45px 10px 0 10px;
+}
+
+.dot-arrow{
+	text-align:right;
+	width:50px;
+	font-size:1em;
+}
+
+.dot-arrow .blue{
+	margin:-6px -8px 0 0;
+}
+
+/************ Captions */
+
+#journey-captions{
+	margin:30px 0 0 0;
+	height:245px;
+	width:100%;
+}
+
+#journey-captions h3{
+	text-align:center;
+}
+
+.caption{
+	float:left;
+	width:230px;
+	height:200px;
+	margin: 0 10px 0 0;
+}
+
+.last-caption{
+	margin-right:0px;
+}
+
+.last-caption h3{
+	font-size:1.75em;
+	margin-bottom:23px;
+}
+
+.caption-n h3{
+	font-size:1.2em;
+}
+
+.caption-n img{
+	margin:10px 0 0 60px;
+}
+
+#journey-captions p{
+	text-align:center;
+	width:230px;
+	margin:10px 0 10px 0;
+	font-size:0.89em;
+}
+
+.breakleft{
+	float:left;
+	height:30px;
+	width:37.5px;
+}
+
+#want-to-help{
+	width:155px;
+}
+
+
+/************ Internship */
+
+#message-internship{
+	float:left;
+	width:580px;
+	height:auto;
+	margin:40px 0 0 0;
+	padding:0 23px 0 0;
+}
+
+#message-internship .clear{
+	height:40px;
+}
+
+.dotted-vertical-border{
+	margin:40px 0 0 0;
+	width:4px;
+	height:370px;
+	/*background:url('../images/dottedline-vertical.png') repeat-y;*/
+	float:left;
+}
+
+#message-internship ul{
+	list-style-type: none;
+	width:270px;
+	margin-top:18px;
+}
+
+#message-internship li{
+	background:url('../images/bullet-arrow-blue.png');
+	background-repeat:no-repeat;
+	background-position:0px 5px;
+	padding-left:15px;
+}
+
+.internship-list{
+	float:left;
+	margin:10px 0 0 0;
+}
+
+#technique{
+	margin-right:40px;
+}
+
+.internship-list-title{
+	font-size:1em;
+}
+
+#internship-additional-info{
+	margin-bottom:15px;
+}
+
+.when-where{	
+	font-size:0.9em;
+	padding:10px 23px 7px 23px;
+	background:#eaeaea;
+}
+
+.when{
+	margin-right:76px;
+}
+
+/************ Internship-form */
+
+#internship-form{
+	width:310px;
+	margin:45px 0 0 33px;
+	padding:0px 0 10px 0;
+	float:left;
+	font-family:QuicksandBook;
+	font-size:0.9em;
+	line-height:1.55em;
+}
+
+#internship-form h2{
+	font-family:"QuicksandBold";
+	font-size:1.3em;
+	margin:0 0 23px 0;
+}
+
+.internship-input{
+	font-family:"QuicksandBook";
+	color:#00aadb;
+	font-size:0.9em;
+	border: 1px solid white;
+	border-bottom:1px dotted #eaeaea;
+	padding-top:2px;
+	width:110px;
+}
+
+#select-place{
+	margin:3px 0 3px 0;
+	width:205px;
+}
+
+#select-day{
+	width:55px;
+}
+
+#position{
+	width:195px;
+	margin-bottom:12px;
+}
+
+#select-type-position,#select-salary{
+	width:83px;
+}
+
+#select-commitment{
+	width:195px;
+}
+
+#location{
+	width:98px;
+}
+
+#additional-q-r{
+	width:115px;
+}
+
+#website-link{
+	width:156px;
+}
+
+.internship-submit{
+	font-family:"QuicksandBook";
+	border:none;
+	display:block;
+	font-size:0.9em;
+	padding:10px 10px 8px 10px;
+	margin:30px 0 0 0;
+	color:#fff;
+	background:#000;
+	text-align:center;
+	width:100px;
+	cursor:pointer;
+}
+
+/************************************************* Work > Web */
+
+.browser{
+	position:relative;
+	height:440px;
+	width:550px;
+	margin:auto;
+	margin-top:10px;
+}
+
+.browser-top{
+	background:url('../images/browser-window-top.png');
+	width:550px;
+	height:28px;
+	display:block;
+	position:relative;
+}
+
+.address{
+	position:absolute;
+	margin:14px 0 0 57px;
+	font-family: Arial;
+	font-size:xx-small;
+	color:#565656;
+}
+
+.browser-content{
+	width:548px;
+	height:366px;
+	border-left:1px solid #6c6c6c;
+	border-right:1px solid #6c6c6c;
+}
+
+.hand-left{
+	position:absolute;
+	background:url('../images/work-left-hand.png');
+	height:220px;
+	width:124px;
+	display:block;
+	margin:105px 0 0 -67px;
+}
+
+.hand-right{
+	position:absolute;
+	background:url('../images/work-right-hand.png');
+	width:108px;
+	height:220px;
+	display:block;
+	margin:95px 0 0 484px;
+}
+
+.browser-bottom{
+	background:url('../images/browser-window-bottom.png');
+	width:550px;
+	height:11px;
+	display:block;
+}
+
+
+/************************************************* Work > Print */
+
+.print{
+	position:relative;
+	height:440px;
+	width:750px;
+	margin:auto;
+	margin-top:10px;
+	text-align: center;
+}
+
+.hands{
+	position:absolute;
+	width:420px;
+	left:50%;
+	margin-left:-210px;
+	height:90px;
+}
+
+.hand-left2{
+	float:left;
+	width:165px;
+	height:90px;
+	background:url('../images/work-left-hand2.png')
+}
+
+.hand-right2{
+	float:right;
+	width:150px;
+	height:90px;
+	background:url('../images/work-right-hand2.png')
+}
+
+.print-content{
+	padding:44px 0 0 0;
+}
+
+.print-content img{
+	border:1px solid #6c6c6c;
+}
+
+/************************************************* Work > Motion */
+
+.motion{
+	width:750px;
+	height:440px;
+	margin:auto;
+	margin-top:-15px;
+}
+
+.motion-content{
+	position:relative;
+	width:640px;
+	height:360px;
+	margin:auto;
+	padding:45px 0 0 5px;
+}
+
+.motion .hand-left{
+	position:absolute;
+	display:block;
+	background:url('../images/work-left-hand3.png');
+	width:170px;
+	height:250px;
+	z-index:2;
+	margin:11px 0 0 -27px;
+}
+
+.motion .hand-right{
+	position:absolute;
+	display:block;
+	background:url('../images/work-right-hand3.png');
+	width:225px;
+	height:145px;
+	z-index:2;
+	margin:300px 0 0 560px;
+}
+
+#animation{
+	width:640px;
+	height:360px;
+	border: 1px solid black;
+	background:url('../images/portfolio_motion/work-motion-festivalduvent.png');
+}
+
+
+/************************************************* Services */
+
+#services{
+	width:950px;
+}
+
+#services-icons{
+	margin-top:105px;
+}		
+
+.service-icon{
+	float: left;
+	display:inline-block;
+	width:226px;
+	height:230px;
+}
+
+.service-title{
+	font-family:"QuicksandBold";
+	margin:172px 0 0 -5px;
+	font-size:1.1em;
+	text-align:center;
+}
+
+#strategy{
+	background:url('../images/sprite_services.png') 0px 0px no-repeat;
+	margin-right:123px;
+}
+
+#strategy:hover{
+	background:url('../images/sprite_services.png')0px -230px  no-repeat;
+}
+
+#design{
+	background:url('../images/sprite_services.png') -230px 0px no-repeat;
+	margin-right:123px;
+}
+
+#design:hover{
+	background:url('../images/sprite_services.png') -230px -230px no-repeat;
+}
+
+#development{
+	background:url('../images/sprite_services.png') -460px 0px no-repeat;
+}
+
+#development:hover{
+	background:url('../images/sprite_services.png') -460px -230px  no-repeat;
+}
+
+.service-icon em {
+	width: 230px;
+	min-height:30px;
+	line-height:1.5em;
+	padding: 20px 0px 0px 0px;
+	position: absolute;
+	top:350px;
+	font-style: normal;
+	z-index: 6;
+	display:none;
+	background:url('../images/service-box-top.png') no-repeat;
+}
+
+.service-icon em span{
+	background-color:#f2f2f2;
+	width: 217px;
+	min-height:40px;
+	padding: 10px 0px 13px 13px;
+	border:1px solid #000;
+	display:block;
+}
+
+
+/************************************************* Motivation */
+
+#motivation{
+	position:relative;
+	margin-top:10px;
+	height:100%;
+	width:100%;
+}
+
+.chart-legend{
+	width:270px;
+	height:auto;
+	margin-top:25px;
+	position:absolute;
+}
+
+#motivation p{
+	width:265px;
+	margin:5px 0 0 0;
+}
+
+#motivation h1{
+	font-family: "QuicksandBook";
+	font-size:2em;
+}
+
+#motivation h1 .bold{
+	color:#15b8e7;
+}
+
+#motivation h2{
+	font-size:1.1em;
+}
+
+#good-evolving{
+	margin-left:690px;
+}
+
+#my-skills{
+	width:115px;
+}
+
+#piechart{
+	margin:auto;
+	width:372px;
+	height:370px;
+	text-align:center;
+}
+
+#piechart img{
+	margin-top:20px;
+}
+
+.challenging{
+	margin-top:30px;
+}
+
+.evolving{
+	margin-top:65px;
+}
+
+	
+/* -------------------------------------------------------
+Footer
+--------------------------------------------------------*/
+
+#footer {
+	position: fixed;
+	bottom:0;
+	width: 100%;
+	z-index:3;
+	font-family: "QuicksandBook", Tahoma, Helvetica, Arial, sans-serif;
+}
+
+#footer h4{
+	font-size:1.23em;
+	margin-bottom:10px;
+}
+
+#icone_langue_fr{
+	position:absolute;
+	width:40px;
+	height:40px;
+	bottom:10px;
+	left:10px;
+	background:url('../images/francais.png') 0px 0px no-repeat;
+}
+
+#icone_langue_fr:hover{
+	background:url('../images/francais.png') 0px -40px no-repeat;
+}
+
+#icone_langue_en{
+	position:absolute;
+	width:40px;
+	height:40px;
+	bottom:10px;
+	left:60px;
+	background:url('../images/english.png') 0px 0px no-repeat;
+}
+
+#icone_langue_en:hover{
+	background:url('../images/english.png') 0px -40px no-repeat;
+}
+
+/************************************************* Above Fold */
+
+#footer-fold{
+	position:relative;
+	margin-top:-135px;
+	height:135px;
+	clear:both;
+	background-color:#15b8e7;
+	color:#000;
+}
+
+#footer-content{
+	height:135px;
+	width:960px;
+	margin:0 auto;
+}
+
+#contact-pigeon{
+	float:right;
+	padding:30px 0 0 0;
+	height:85px;
+	width:310px;
+	margin:3px 5px 0 0;
+	background:url('../images/contact.png') 100% 50% no-repeat;
+}
+
+#footer-fold p{
+	font-size:0.7em;
+	margin-bottom:5px;
+}
+
+#plus{
+	color:#fff;
+	background-color: inherit;
+	font-size:3em;
+	right: 20px;
+	margin-left:90px;
+	width:50px;
+	height:50px;
+	border: none;
+	cursor:pointer;
+}
+
+/************************************************* Under fold */
+
+#footer-unfold {
+	width: 100%;
+	height: 0px;
+	background-color:#15b8e7;
+	color:#000;
+}
+
+#footer-unfold-content {
+	width:960px;
+	padding-top:20px;
+	margin:0 auto;
+	position:relative;
+}
+
+#footer-unfold-content h4{
+	color:white;
+	background-color: inherit;
+	margin-bottom:20px;
+}
+
+#footer-unfold-content p{
+	font-size:0.85em;
+	margin-bottom:20px;
+}
+
+#contact-info{
+	position:absolute;
+	width:230px;
+	height:300px;
+	margin:0 0 0 5px;
+}
+
+/************************************************* Form */
+
+#contact-form{
+	position:absolute;
+	margin: 0 0 0 240px;
+	width:440px;
+	height:220px;
+	border: solid 1px #fff;
+}
+
+#contact-form table{
+	margin:25px 0 0 25px;
+}
+
+.contact-form-title{
+	font-size:0.85em;
+}
+
+.contact-input{
+	font-family:"QuicksandBook";
+	border:none;
+	width:160px;
+	height:23px;
+	margin:5px 0 18px 0;
+	font-size:0.85em;
+	padding:0 0 0 3px;
+}
+
+.contact-textarea{
+	font-family:"QuicksandBook";
+	font-size:0.85em;
+	border:none;
+	height:130px;
+	width:200px;
+	resize:none;
+	margin:5px 0 0 0;
+	padding:8px 5px 5px 5px;
+}
+
+.contact-submit{
+	font-family:"QuicksandBook";
+	border:none;
+	display:block;
+	background:#000;
+	color:#fff;
+	padding:4px 0 0 0;
+	text-align:center;
+	font-size:0.84em;
+	width:100px;
+	height:30px;
+	margin:25px 0 0 341px;
+	cursor:pointer;
+}
+
+/************************************************* Follow */
+
+#contact-follow{
+	position:absolute;
+	width:230px;
+	height:300px;
+	margin:0 0 0 725px;
+}
+
+
+
+
+
+
+
+/**** Additional styles (404 pages, thank you pages, contact errors, etc) */
+
+#message{
+	margin:auto;
+	width:480px;
+}
+
+#ok{
+	width:62px;
+	margin-left:209px;
+}
+
+#message h1{
+	text-align:center;
+}
+
+#message p{
+	text-align:center;
+	margin:15px 0 15px 0;
+}
+
+.contact-succeed{
+	margin-top:120px;
+}
+
+.contact-error{
+	margin-top:100px;
+}
+
+/*404*/
+
+.message-error{
+	margin-top:80px;
+}
+
+#message h2{
+	text-align:center;
+	font-size:1.2em;
+}
+
+#message ul{
+	list-style-type: none;
+	/*margin-top:18px;*/
+	margin:auto;
+	text-align:center;
+	width:300px;
+}
+
+#message ul img{
+	margin-right:6px;
+}
+
+/*#message li{
+	background:url('../images/bullet-arrow-blue.png');
+	background-repeat:no-repeat;
+	background-position:0px 5px;
+	padding-left:15px;
+}*/
+
+#message a{
+	font-family:"QuicksandBold", Helvetica, Arial, sans-serif;
+	color:#000;
+	background-color:inherit;
+}
+
+#message a:hover{
+	color:#00aadb;
+	background-color:inherit;
+}
+
+#message .dots{
+	display:block;
+	margin:auto;
+	height:4px;
+	background:url('../images/dotted-pattern.png');
+	width:330px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+
+/* -------------------------------------------------------
+Loading
+--------------------------------------------------------*/
+
+#mask {
+	display:none;
+    position:absolute; 
+    top:0; 
+    left:0; 
+    right:0; 
+    bottom:0; 
+	background: #fff;
+    z-index:9999;
+	height: 100%;
+}
+
+#loading-wrap {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  overflow: visible;
+}
+
+#loading{
+	width:300px;
+	height:360px;
+  	margin-left: -180px;
+  	position: absolute;
+ 	top: -180px;
+  	left: 50%;
+  	overflow:hidden;
+  	text-align:center;
+}
+
+#loading-image{
+	margin:auto;
+	width:300px;
+	height:300px;
+	background:url('../images/loading-contour.png');
+}
+
+#loading img{
+	margin-bottom:10px;
+}
+
+.loading-message{
+	font-family:"QuicksandBook", Helvetica, Arial, sans-serif;
+	font-size:1em;
+	line-height:1.3em;
+}

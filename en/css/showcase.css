@@ -1,0 +1,111 @@
+.showcase-load
+{
+	height: 425px;
+	overflow: hidden;
+}
+
+.showcase
+{
+	position: relative;
+	margin:0 auto;
+	background: #fff;
+}
+
+.showcase a{
+	color:#fff;
+}
+	
+	/* Navigation arrows */
+	.showcase-arrow-previous, .showcase-arrow-next
+	{
+		position: absolute;
+		background: url('../images/showcase-arrows.png');
+		width: 70px;
+		height: 70px;
+		top: 180px;
+		cursor: pointer;
+	}
+	
+	.showcase-arrow-previous
+	{
+		left: -70px;
+	}
+	
+	.showcase-arrow-previous:hover
+	{
+		background-position: bottom left;
+	}
+	
+	.showcase-arrow-next
+	{
+		right: -70px;
+		background-position: top right;
+	}
+	
+	.showcase-arrow-next:hover
+	{
+		background-position: bottom right;
+	}
+	
+	.showcase-content
+	{
+		background: #fff;
+	}
+		
+		.showcase-content-wrapper
+		{
+			text-align: center;
+			width: 800px;
+			vertical-align: middle;
+		}
+		
+		/* Styling the tooltips */
+		.showcase-plus-anchor
+		{
+			background-repeat: no-repeat;
+		}
+		
+		.showcase-i{
+			background: url('../images/tooltip-showcase-i.png') top transparent;
+			background-position: top;
+			cursor:default;
+		}
+		
+		.showcase-link{
+			background: url('../images/tooltip-showcase-link.png') top transparent;
+			background-position: top;
+		}
+		
+		.showcase-plus-anchor:hover
+		{
+			background-position: bottom;
+		}
+		
+		div.showcase-tooltip
+		{
+			padding:10px 12px 10px 12px;
+			background:#fff;
+			border:1px #6c6c6c solid;
+			color:inherit;
+			font-size:0.9em;
+			font-family:QuicksandBook, Tahoma, Helvetica, Arial, sans-serif;
+			line-height:1.2em;
+		}
+		
+		.showcase-info{
+			padding:12px;
+		}
+		
+		.showcase-tooltip .break{
+			height:10px;
+		}
+		
+		.showcase-content h2{
+			font-family:"QuicksandBold";
+			font-size:1.2em;
+		}
+		
+	.showcase-onepage .showcase-content
+	{
+		margin-bottom: 50px;
+	}
